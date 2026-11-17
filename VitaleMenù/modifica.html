@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Personalizza il tuo Panino</title>
+    <style>
+        body {
+            background-color: #fff3cd;
+            color: #000000;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #d35400;
+        }
+
+        h3 {
+            color: #333333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            padding: 8px 15px;
+            margin-right: 5px;
+            font-weight: bold;
+        }
+
+        a {
+            color: #d35400;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Configuratore Panino</h1>
+    <p>Personalizza il tuo prodotto come preferisci.</p>
+    <hr>
+
+    <form action="conferma.html" method="GET">
+
+        <h3>1. Scegli il tipo di pane</h3>
+        <label><input type="radio" name="pane" value="classico" checked> Pane classico con sesamo</label>
+        <label><input type="radio" name="pane" value="integrale"> Pane integrale</label>
+        <label><input type="radio" name="pane" value="rustico"> Pane rustico ai cereali</label>
+
+        <hr>
+
+        <h3>2. Modifica Ingredienti</h3>
+        <label><input type="checkbox" name="ingrediente_carne" value="si" checked> Carne di manzo</label>
+        <label><input type="checkbox" name="ingrediente_insalata" value="si" checked> Insalata fresca</label>
+        <label><input type="checkbox" name="ingrediente_cipolla" value="si" checked> Cipolla</label>
+
+        <hr>
+
+        <h3>3. Salse ed Extra</h3>
+        <label><input type="checkbox" name="extra_formaggio" value="1.00"> Formaggio extra (+€ 1,00)</label>
+        <label><input type="checkbox" name="extra_bacon" value="1.50"> Bacon extra (+€ 1,50)</label>
+        <label><input type="checkbox" name="extra_salsa_crispy" value="0.80"> Salsa Crispy extra (+€ 0,80)</label>
+        <label><input type="checkbox" name="extra_maionese" value="0.50"> Maionese (+€ 0,50)</label>
+
+        <hr>
+
+        <input type="submit" value="Aggiungi al Carrello">
+        <input type="reset" value="Ripristina Scelte">
+
+    </form>
+
+    <br><br>
+    <a href="VitaleMenù.html">← Torna al Catalogo Generale</a>
+
+</body>
+</html>
